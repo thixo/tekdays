@@ -20,5 +20,6 @@ class TekUser {
         email() 
         website()
         bio maxSize: 5000
+        password display: false
     }
 }
