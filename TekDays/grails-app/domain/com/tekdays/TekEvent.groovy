@@ -23,7 +23,7 @@ class TekEvent {
         description maxSize: 5000
         organizer()
         venue()
-        startDate min: Date.parse('yyyy/MM/dd', '2015/01/01')
+        startDate min: Date.parse('yyyy/MM/dd', '2014/01/01')
         endDate max: Date.parse('yyyy/MM/dd', '2100/01/01')
     }
 }
