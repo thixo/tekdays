@@ -5,7 +5,7 @@ class TekUser {
     String fullName
     String userName
     String password
-    String email
+    String emailAddress
     String website
     String bio
     
@@ -17,7 +17,7 @@ class TekUser {
     static constraints = {
         fullName()
         userName()
-        email() 
+        emailAddress email: true
         website()
         bio maxSize: 5000
         password display: false

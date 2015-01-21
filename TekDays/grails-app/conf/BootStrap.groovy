@@ -8,7 +8,7 @@ class BootStrap {
                 fullName: 'John Doe',
                 userName: 'jdoe',
                 password: 't0ps3cr3t',
-                email: 'jdoe@johnsgroovyshop.com',
+                emailAddress: 'jdoe@johnsgroovyshop.com',
                 website: 'blog.johnsgroovyshop.com',
                 bio: '''John has been programming for over 40 years. He has
                         worked with every programming language known to man
@@ -22,7 +22,7 @@ class BootStrap {
                 fullName: 'John Deere',
                 userName: 'tractorman',
                 password: 't0ps3cr3t',
-                email: 'john.deere@porkproducers.org',
+                emailAddress: 'john.deere@porkproducers.org',
                 website: 'www.perl.porkproducers.org',
                 bio: '''John is a top notch Perl programmer and a pretty
                         good hand around the farm. If he can't program it he
@@ -79,7 +79,7 @@ class BootStrap {
                 fullName: 'Sarah Martin', 
                 userName: 'sarah', 
                 password: '54321',
-                email: 'sarah@martinworld.com',
+                emailAddress: 'sarah@martinworld.com',
                 website: 'www.martinworld.com',
                 bio: 'Web designer and Grails fan'))
         
@@ -88,7 +88,7 @@ class BootStrap {
                 fullName: 'Bill Smith',
                 userName: 'Mr_Bill',
                 password: '12345',
-                email: 'mrbill@email.com',
+                emailAddress: 'mrbill@email.com',
                 website: 'www.mrbillswebsite.com',
                 bio: 'Software developer, claymation artist'))
 
