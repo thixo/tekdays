@@ -71,6 +71,33 @@ class BootStrap {
         if (!event2.save()){
             event2.errors.allErrors.each{error -> println "An error occured with event2: ${error}" }
         }
+        
+        
+        def g1 = TekEvent.findByName('Gateway Code Camp')
+        g1.addToVolunteers(
+            new TekUser(
+                fullName: 'Sarah Martin', 
+                userName: 'sarah', 
+                password: '54321',
+                email: 'sarah@martinworld.com',
+                website: 'www.martinworld.com',
+                bio: 'Web designer and Grails fan'))
+        
+        g1.addToVolunteers(
+            new TekUser(
+                fullName: 'Bill Smith',
+                userName: 'Mr_Bill',
+                password: '12345',
+                email: 'mrbill@email.com',
+                website: 'www.mrbillswebsite.com',
+                bio: 'Software developer, claymation artist'))
+
+        g1.addToRespondents('joeblogs@email.com')
+        g1.addToRespondents('ben@grailsmail.com')
+        g1.addToRespondents('zachary@linuxgurus.com')
+        g1.addToRespondents('solomon@bootstrapwelding.com')
+        
+        g1.save()
     }
 
     def destroy = {

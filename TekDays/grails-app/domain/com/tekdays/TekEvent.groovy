@@ -11,6 +11,11 @@ class TekEvent {
     Date startDate
     Date endDate
     String description
+    
+    static hasMany = [
+        volunteers : TekUser,
+        respondents : String,
+    ]
 
     @Override
     public String toString() {
