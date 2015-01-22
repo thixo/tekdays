@@ -1,3 +1,5 @@
+import com.tekdays.Sponsor
+import com.tekdays.Sponsorship
 import com.tekdays.TekEvent
 import com.tekdays.TekUser
 
@@ -98,6 +100,33 @@ class BootStrap {
         g1.addToRespondents('solomon@bootstrapwelding.com')
         
         g1.save()
+        
+        
+        def s1 = 
+            new Sponsor(
+                name: 'Contegix', 
+                website: 'http://www.contegix.com',
+                description: 'Beyond managed hosting').save()
+                
+        def s2 = 
+            new Sponsor(
+                name: 'Object Computing Incorporated',
+                website: 'http://ociweb.com',
+                description: 'An OO software engineering company').save()
+                
+        def sp1 = 
+            new Sponsorship(
+                event:g1, 
+                sponsor:s1, 
+                contributionType: 'Other', 
+                description: 'Cool t-shirts').save()
+        
+        def sp2 = 
+            new Sponsorship(
+                event:g1,
+                sponsor:s2,
+                contributionType: 'Venue', 
+                description: 'Will be paying for Moscone').save()
     }
 
     def destroy = {

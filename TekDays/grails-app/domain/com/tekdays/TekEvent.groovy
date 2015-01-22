@@ -15,6 +15,7 @@ class TekEvent {
     static hasMany = [
         volunteers : TekUser,
         respondents : String,
+        sponsorships : Sponsorship
     ]
 
     @Override
@@ -30,5 +31,7 @@ class TekEvent {
         venue()
         startDate min: Date.parse('yyyy/MM/dd', '2014/01/01')
         endDate max: Date.parse('yyyy/MM/dd', '2100/01/01')
+        volunteers nullable: true
+        sponsorships nullable: true
     }
 }
